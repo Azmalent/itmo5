@@ -1,0 +1,14 @@
+f1(x) = sqrt((0 - abs(abs(x)-1) * abs(3-abs(x))) over ((abs(x)-1) * (3-abs(x))))
+f2(x) = 1+(abs(abs(x) - 3) over (abs(x) - 3))
+f3(x) = sqrt(1 - ((x over 7) sup 2))
+f4(x) = 5 + 0.97*(abs(x - 0.5)+abs(x + 0.5)) - 3*(abs(x - 0.75) + abs(x+0.75))
+f5(x) = 1+abs(1-abs(x)) over (1-abs(x))
+f(x) = 2 * f1(x) * f2(x) * f3(x) + f4(x) * f5(x)
+
+g(x) = ((0-3)*sqrt(1-(x over 7) sup 2)) * sqrt(abs(abs(x)-4) over (abs(x)-4))
+
+h(x) = abs(x over 2)-0.0913722*(x sup 2)-3+sqrt(1-(abs(abs(x)-2)-1) sup 2)
+
+i(x) = (2.71052 + (1.5 - 0.5*abs(x)) - 1.35526 * sqrt(4-(abs(x)-1) sup 2)) * sqrt(abs(abs(x)-1) over (abs(x)-1))+0.9 
+
+plot(f(x), 0-7, 0-3, f(x), 0-1, 1, f(x), 3, 7, g(x), 0-7, 0-4, g(x), 4, 7, h(x), 0-4, 4, i(x), 0-3, 0-1, i(x), 1, 3)
